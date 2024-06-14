@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+<body>
+    <h1>Hello</h1>
+    <a href="/about">About Us</a>
+
+    <script>
+        fetch('/api')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.msg); // Output: "Hello world"
+                // You can further use the 'data.msg' value to update the page content
+            });
+    </script>
+</body>
+</html>
